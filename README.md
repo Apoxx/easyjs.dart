@@ -40,7 +40,7 @@ main() {
 
     print(js.square(10));
 
-    //Passing a String to the js object is equivalent to call js.eval().
+    //Passing a String to the js object is equivalent to call js.eval.
     js("console.log('Hello from eval');");
 
   });
