@@ -12,7 +12,9 @@ class EasyJS{
   EasyJS._() : super();
 
   Proxy call(dynamic arg,{List args: const[], withThis: false}){
-
+    if(arg is String){
+      return context.eval(arg);
+    }
     if(arg is Map){
       return map(arg);
     }
